@@ -1,0 +1,11 @@
+.car{
+    width: 90%;
+    margin: auto;
+}
+.pie h3{
+    font-size: 20px;
+}
+.btn-success{
+    margin-left: 45%;
+    overflow-x: auto
+}

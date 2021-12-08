@@ -1,0 +1,295 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins',sans-serif;
+}
+body{
+	margin: 0;
+	padding: 0;
+    width: 100%;
+    height: 350px; 
+    background-color:#f8f2f2;
+    background-image: url('../img/body.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.banner{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 500px;
+    background-image: url('../img/banner.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.banner:before{
+    content: "";
+    width: 90%;
+    height: 500px;
+    background: black;
+    opacity: 0.3;
+    position: absolute;
+}
+.banner h1{
+    color: white;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 5px;
+    z-index: 300;
+    background-color: rgba(255,255,255,0.2);
+}
+#bar-nav{
+	width: 100%;
+    background: rgb(216, 138, 75);
+	display: flex;
+	justify-content: space-around;
+    align-items: center;
+}
+.btnMenu{
+	padding: 1rem;
+	transform: scale(0);
+}
+#der{
+    padding-right: 10%;
+	width: 30%;
+    height: auto;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.bar-der{
+    color: white;
+	text-decoration: none;
+	font-family: 'Nunito', sans-serif;
+	padding: 5%;
+    white-space: nowrap;
+}
+#busqueda{
+    height: 100%;
+	width:40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+#txtBusqueda{
+	width:75%;
+	height: 1rem;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+	border-radius: 10px;
+}
+#logo{
+    width: 10%;
+}
+#imagenLogo{
+    width: 50%;
+}
+#btnBuscar{
+	border: none;
+    color: white;
+    margin: 0.5rem;
+    text-decoration: none;
+    border-radius: 150%;
+    font-size: 1.5rem;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+#btnBuscar:hover {
+    color: white;
+}
+
+.carrito{
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.1rem;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+
+.animacion:hover {
+    background-color:rgb(252, 252, 252); 
+    color: rgb(216, 138, 75);
+}
+.textMenu{
+    height: 100%;
+	font-size: 1.2rem;
+}
+
+/*Busqueda*/
+.tituloBus{
+    background-color: #e7d2f2;
+    color: blueviolet;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    margin-top: 1rem;
+    border-bottom: 5px solid blueviolet;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+.busqueda{
+    background-color: #e7d2f2;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 10px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+/* Cards */
+.catalogo{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.cards{
+    width: 25%;
+    height: 40rem;
+    display:flex;
+    flex-direction: column;
+    margin-top: 4rem;
+    margin: 2rem;
+    background: rgb(216, 138, 75);
+    color: white;
+}
+.cards a{
+    text-decoration: none;
+    color:white;
+}
+.cards img{
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+}
+.descripcion{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.descripcion a{
+    margin-top: 10px;
+    border: 1px solid;
+    padding: 1rem 6rem;
+    border-radius: 2%;
+}
+.descripcion a:hover{
+    background: rgb(209, 128, 62);
+}
+.descripcion p{
+    text-align: center;
+}
+.pie{
+    background: gray;
+    width: 100%;
+    height: 200px;
+    color: white;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.redes{
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+.redes i{
+    margin: 1.5rem;
+    font-size: 2rem;
+    color: white;
+}
+@media only screen and (max-width: 800px) {
+    /* Menu principal */
+    #imagenLogo{
+        width: 100%;
+    }
+    #btnBuscar{
+        background-color: #371a4600;
+    }
+    #bar-nav{
+        z-index: 10;
+        display: flex;
+        justify-content: space-evenly;
+        margin-right: 1rem;
+        align-items: center;
+    }
+    #logo{
+        width: 20%;
+    }
+	#iconos img{
+		width: 15%;
+	}
+	.btnMenu{
+        font-size: 2rem;
+		position: fixed;
+		transform: scale(1);
+		top: .5rem;
+		left: 1rem;
+	
+        color: #ffffff;
+		border-radius: 10%;
+		background-color: rgba(255, 255, 255, 0.336);
+		backdrop-filter: blur(5px);
+		z-index: 5;
+		cursor: pointer;
+	}
+	.btnMenu:hover{
+		color: #000000;
+		background-color: #fafafa;
+		transition: transform 500ms;
+	}
+
+	#bar-nav{
+        z-index: 5;
+		padding: 1rem;
+		text-align: center;
+	}
+    .derOcultar{
+        z-index: 5;
+		position: fixed;
+		display: flex;
+		flex-direction: column;
+		left: 0;
+		top: 8rem;
+        height: 12rem;
+		background-color: rgb(216, 138, 75);
+		transform: translateX(-50rem);
+		transition: transform 500ms cubic-bezier(0.95, 0.05, 0.795, 0.035);
+	}
+    #der{
+        z-index: 5;
+        padding-top: 3rem;
+        display: flex;
+        justify-content: stretch;
+        align-items: center;
+    }
+	.derMostrar{
+		transform: translateX(0rem);
+		transition: transform 300ms ease-in-out;
+        z-index: 5;
+	}
+    .bar-der{
+        width: 100%;
+    }
+    .animacion:hover {
+        background-color: white; 
+        color: rgb(224, 146, 82);
+    }
+    /* Fin menu principal */
+    .cards{
+        width: 80%;
+    }
+}
