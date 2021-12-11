@@ -13,6 +13,15 @@ public class Producto {
     private double peso;
     private String tipo;
     private double precio;
+    private int cant;
+
+    public int getCant() {
+        return cant;
+    }
+
+    public void setCant(int cant) {
+        this.cant = cant;
+    }
 
     public Producto(int id, String nombre, String img, String relleno, String cobertura, String pan, String mensaje, boolean tresLeches, double peso, String tipo, double precio) {
         this.id = id;

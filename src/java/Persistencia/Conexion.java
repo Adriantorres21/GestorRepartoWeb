@@ -27,12 +27,12 @@ public class Conexion {
         }
         return conMysql;
     }
-//    public static void main(String[] args) {
-//        try {
-//            Connection conn = Conexion.getConexionMysql();
-//            conn.close();
-//        } catch (Exception e) {
-//           
-//        }
-//    }
+    public static void main(String[] args) {
+        try {
+            Connection conn = Conexion.getConexionMysql();
+            conn.close();
+        } catch (Exception e) {
+           
+        }
+    }
 }

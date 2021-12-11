@@ -5,21 +5,10 @@
  */
 package Modelo;
 
-import java.net.URL;
-
-
-
 /**
  *
  * @author Adrian
  */
-public class ServicioCuenta {
-    private String cuenta;
-    private String pass;
+public class Pedidos {
     
-    public void post() throws Exception{
-        URL url = new URL("fg");
-    }
-    
-            
 }

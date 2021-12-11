@@ -93,7 +93,7 @@ body{
     width: 50%;
 }
 #btnBuscar{
-	border: none;
+    border: none;
     color: white;
     margin: 0.5rem;
     text-decoration: none;
@@ -116,14 +116,18 @@ body{
     -webkit-transition-duration: 0.4s; /* Safari */
     transition-duration: 0.4s;
 }
-
+input.animacionBtn{
+    background: none;
+    padding: 20px;
+    color: rgb(216, 138, 75);
+}
 .animacion:hover {
     background-color:rgb(252, 252, 252); 
     color: rgb(216, 138, 75);
 }
 .textMenu{
     height: 100%;
-	font-size: 1.2rem;
+    font-size: 1.2rem;
 }
 
 /*Busqueda*/
@@ -225,6 +229,9 @@ body{
         justify-content: space-evenly;
         margin-right: 1rem;
         align-items: center;
+    }
+    input.animacion{
+        padding: 10px 35px;
     }
     #logo{
         width: 20%;
