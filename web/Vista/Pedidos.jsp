@@ -57,7 +57,7 @@
                     <% } else { %>
                     <div class="dropdown">
                         <a class="btn dropdown-toggle bar-der animacion textMenu" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false"  target="_blank">
-                            <i class="fas fa-user"></i>
+                            <% out.print(session.getAttribute("Cuenta") + " "); %><i class="fas fa-user"></i>
                         </a>
 
                         <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
@@ -78,8 +78,8 @@
             <div class="car table-responsive">
                 <%
                     int id = Integer.parseInt(String.valueOf(session.getAttribute("ID")));
-                    List<PedidoProducto> listaP = PedidoDao.getPedidoProd(id); 
-                    if(!listaP.isEmpty()){
+                    List<PedidoProducto> listaP = PedidoDao.getPedidoProd(id);
+                    if (!listaP.isEmpty()) {
                 %>
                 <table id="tablax" class="display">
                     <thead class="">
@@ -92,12 +92,13 @@
                             <th>Descripcion</th>
                             <th>tipo</th>
                             <th>Precio</th>
+                            <th>Total</th>
                         </tr>
                     </thead>
                     <tbody class="">
                         <% for (PedidoProducto tp : listaP) {%>
                         <tr>
-                            <td><%= tp.getIdPedido()%></td>
+                            <td>#<%= tp.getIdPedido()%></td>
                             <td><%= tp.getFecha()%></td>
                             <td><%= tp.getFechaEn()%></td>
                             <td><% if (tp.isEntregador()) {
@@ -109,9 +110,10 @@
                             <td>Pastel con relleno de <%= tp.getRelleno()%>, <br>
                                 cobertura de <%= tp.getCobertura()%> <% if (tp.isTresLeches()) { %>
                                 <% out.print(", de tres leches");
-                                }%></td>
+                                    }%></td>
                             <td><%= tp.getTipo()%></td>
-                            <td><%= tp.getPrecio()%></td>
+                            <td class="precio"><%= tp.getPrecio()%></td>
+                            <td><%= tp.getTotal()%></td>
                         </tr>
                         <% }%> 
                     </tbody>
@@ -122,12 +124,12 @@
                             <th>Entrega</th>
                             <th>Envio</th>
                             <th>Descripcion</th>
-                            <th>tipo</th>
+                            <th>Tipo</th>
                             <th>Precio</th>
+                            <th>Total</th>
                         </tr>
                     </tfoot>
                 </table>
-                <h3> Total: </h3>
                 <% } else { %>
                 <div class="alert alert-warning">
                     <br><br><br>

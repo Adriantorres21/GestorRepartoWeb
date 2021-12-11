@@ -47,7 +47,7 @@
                     <% } else { %>
                     <div class="dropdown">
                         <a class="btn dropdown-toggle bar-der animacion textMenu" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false"  target="_blank">
-                            <i class="fas fa-user"></i>
+                            <% out.print(session.getAttribute("Cuenta")+" "); %><i class="fas fa-user"></i>
                         </a>
 
                         <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
