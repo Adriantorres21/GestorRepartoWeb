@@ -1,4 +1,3 @@
-
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -14,57 +13,69 @@
     <!-- Menu -->
     <body id="body">
         <header>
-        <div class="icon__menu">
-            <i class="fas fa-bars" id="btn_open"></i>
+            <div class="icon__menu">
+                <i class="fas fa-bars" id="btn_open"></i>
+            </div>
+        </header>
+
+        <div class="menu__side" id="menu_side">
+
+            <div class="name__page">
+                <i class="fas fa-home"></i>
+                <h4>Panaderia Karen</h4>
+            </div>
+
+            <div class="options__menu">	
+
+                <a href="#" class="selected">
+                    <div class="option">
+                        <i class="far fa-address-book" title="Usuarios"></i>
+                        <h4>Usuarios</h4>
+                    </div>
+                </a>
+
+                <a href="#">
+                    <div class="option">
+                        <i class="far fa-file" title="Reportes"></i>
+                        <h4>Reportes</h4>
+                    </div>
+                </a>
+
+                <a href="#">
+                    <div class="option">
+                        <i class="fas fa-truck" title="Repartos"></i>
+                        <h4>Repartos</h4>
+                    </div>
+                </a>
+
+                <a href="#">
+                    <div class="option">
+                        <i class="fas fa-sign-out-alt" title="Salir"></i>
+                        <h4>Salir</h4>
+                    </div>
+                </a>
+            </div>
         </div>
-    </header>
+        <!-- Fin del Menu -->   
+        <main>
+            <!-- Dentro del main va el contenido del modulo -->
+            <h1>Usuarios Disponibles</h1><br>
+            <table>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Apellido Paterno</th>
+                    <th>Apellido Materno</th>
+                    <th>Colonia</th>
+                    <th>Calle</th>
+                    <th>Número de Calle</th>
+                    <th>Teléfono</th>
+                </tr>
+                <tr>
 
-    <div class="menu__side" id="menu_side">
+                </tr>
+            </table>
+        </main>
 
-        <div class="name__page">
-            <i class="fas fa-home"></i>
-            <h4>Panaderia Karen</h4>
-        </div>
-
-        <div class="options__menu">	
-            
-            <a href="#" class="selected">
-                <div class="option">
-                    <i class="far fa-address-book" title="Usuarios"></i>
-                    <h4>Usuarios</h4>
-                </div>
-            </a>
-
-            <a href="#">
-                <div class="option">
-                    <i class="far fa-file" title="Reportes"></i>
-                    <h4>Reportes</h4>
-                </div>
-            </a>
-            
-            <a href="#">
-                <div class="option">
-                    <i class="fas fa-truck" title="Repartos"></i>
-                    <h4>Repartos</h4>
-                </div>
-            </a>
-            
-            <a href="#">
-                <div class="option">
-                    <i class="fas fa-sign-out-alt" title="Salir"></i>
-                    <h4>Salir</h4>
-                </div>
-            </a>
-        </div>
-    </div>
-    <!-- Fin del Menu -->   
-    <main>
-        <!-- Dentro del main va el contenido del modulo -->
-        <h1>Titulo del Modulo </h1><br>
-        <p>Aqui va el contenido</p> <br>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident adipisci beatae impedit quia, deleniti quasi sequi iusto exercitationem nihil nulla, laboriosam dolore corrupti fuga officiis? Odit a mollitia id magnam amet delectus quia blanditiis reprehenderit explicabo eveniet! Rem voluptatum explicabo ipsum quae, dolorum, laudantium doloribus a, illum saepe sapiente accusantium dicta reiciendis? Amet iure porro voluptatum error fugit odit voluptas?</p>
-    </main>
-        
-    <script src="../js/scriptMenu.js"></script>
+        <script src="../js/scriptMenu.js"></script>
     </body>
 </html>
