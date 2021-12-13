@@ -1,3 +1,5 @@
+package Control;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -59,7 +61,9 @@ public class ControllerImg extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         int id = Integer.parseInt(String.valueOf(request.getParameter("idImg")));
-        ProductoDao.listarImg(id, response);
+        if(!ProductoDao.listarImg(id, response)){
+            response.setContentType("image/");
+        }
     }
 
     /**

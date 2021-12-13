@@ -1,5 +1,8 @@
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%
+    if (String.valueOf(String.valueOf(session.getAttribute("Rol"))).equals("1")) {
+%>
 <!DOCTYPE html>
 <html>
     <head>
@@ -74,3 +77,8 @@
         <script src="../../js/scriptMenu.js"></script>
     </body>
 </html>
+<%
+}else{
+    response.sendRedirect("../index.jsp");
+}
+%>

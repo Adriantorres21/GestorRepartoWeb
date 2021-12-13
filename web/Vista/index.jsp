@@ -80,7 +80,7 @@
                 <c:forEach var="dato" items="${lista}">
                     <form action="" method="POST" class="cards">
                         <div class="card-pastel">
-                           <img class="imgp" src="../ControllerImg?idImg=${dato.getId()}"> 
+                            <img class="imgp" src="../ControllerImg?idImg=${dato.getId()}"> 
                         </div>
                         <div class="descripcion">
                             <h2>Pastel ${dato.getNombre()}</h2>
@@ -97,20 +97,20 @@
                 </c:forEach>                      
             </div>
         </div>
-    
-    <jsp:include page="../Car/SesionCar.jsp"/>    
-    <div class="pie">
-        <h3>Telefono: 4771112345</h3>
-        <h3>Direccion Col Casi, Lejos #123</h3>
-        <div class="redes">
-            <a href=""><i class="fab fa-facebook"></i></a>
-            <a href=""><i class="fab fa-twitter"></i></a>
-            <a href=""><i class="fab fa-instagram-square"></i></a>
-        </div>      
-    </div>
-</body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>  
-<script src="../js/btnMenu.js"></script>
-<script type="text/javascript" src="${pageContext.request.contextPath}/js/agregarCar.js"></script>
-<script type="text/javascript" src="${pageContext.request.contextPath}/js/jquery.js"></script>
+
+        <jsp:include page="../Car/SesionCar.jsp"/>    
+        <div class="pie">
+            <h3>Telefono: 4771112345</h3>
+            <h3>Direccion Col Casi, Lejos #123</h3>
+            <div class="redes">
+                <a href=""><i class="fab fa-facebook"></i></a>
+                <a href=""><i class="fab fa-twitter"></i></a>
+                <a href=""><i class="fab fa-instagram-square"></i></a>
+            </div>      
+        </div>
+    </body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>  
+    <script src="../js/btnMenu.js"></script>
+    <script type="text/javascript" src="${pageContext.request.contextPath}/js/agregarCar.js"></script>
+    <script type="text/javascript" src="${pageContext.request.contextPath}/js/jquery.js"></script>
 </html>

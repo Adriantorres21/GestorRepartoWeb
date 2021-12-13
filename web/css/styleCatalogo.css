@@ -105,7 +105,20 @@ body{
 #btnBuscar:hover {
     color: white;
 }
-
+.imgP{
+    overflow: hidden
+}
+.imgp:before{
+    overflow: hidden;
+    content: ' ';
+    display: block;
+    position: absolute;
+    height:  20rem;
+    width: 22.5%;
+    background-image: url("../img/Delice.jpg");
+    background-size: cover;
+    background-position: center;
+}
 .carrito{
     border: none;
     color: white;

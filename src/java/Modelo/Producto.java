@@ -25,6 +25,11 @@ public class Producto {
         this.cant = cant;
     }
 
+    public Producto() {
+    }
+    
+    
+    
     public Producto(int id, String nombre, InputStream img, String relleno, String cobertura, String pan, String mensaje, boolean tresLeches, double peso, String tipo, double precio) {
         this.id = id;
         this.nombre = nombre;
@@ -37,6 +42,10 @@ public class Producto {
         this.peso = peso;
         this.tipo = tipo;
         this.precio = precio;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
     
     public int getId() {
