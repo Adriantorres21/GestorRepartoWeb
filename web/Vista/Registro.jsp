@@ -19,7 +19,7 @@
                     </div>
                     <div class="div">
                         <h5>Nombre</h5>
-                        <input name="nombre" type="text" class="input">
+                        <input name="nombre" type="text" class="input" required>
                     </div>
                 </div>
                 <div class="input-div one">
@@ -29,7 +29,7 @@
                     </div>
                     <div class="div">
                         <h5>Apellido Paterno</h5>
-                        <input name="apP" type="text" class="input">
+                        <input name="apP" type="text" class="input" required>
                     </div>
                 </div>
                 <div class="input-div one">
@@ -39,7 +39,7 @@
                     </div>
                     <div class="div">
                         <h5>Apellido Materno</h5>
-                        <input name="apM" type="text" class="input">
+                        <input name="apM" type="text" class="input" required>
                     </div>
                 </div>
                 <div class="input-div one">
@@ -49,7 +49,7 @@
                     </div>
                     <div class="div">
                         <h5>Colonia</h5>
-                        <input name="col" type="text" class="input">
+                        <input name="col" type="text" class="input" required>
                     </div>
                 </div>
                 <div class="input-div one">
@@ -59,7 +59,7 @@
                     </div>
                     <div class="div">
                         <h5>Calle</h5>
-                        <input name="calle" type="text" class="input">
+                        <input name="calle" type="text" class="input" required>
                     </div>
                 </div>
                 <div class="input-div one">
@@ -69,7 +69,7 @@
                     </div>
                     <div class="div">
                         <h5>No. Exterior</h5>
-                        <input name="noC" type="text" class="input">
+                        <input name="noC" type="text" class="input" required>
                     </div>
                 </div>
                 <div class="input-div one">
@@ -79,7 +79,7 @@
                     </div>
                     <div class="div">
                         <h5>Tel</h5>
-                        <input name="tel" type="text" class="input">
+                        <input name="tel" type="text" class="input" required>
                     </div>
                 </div>
                 <div class="input-div one">
@@ -89,7 +89,7 @@
                     </div>
                     <div class="div">
                         <h5>Correo</h5>
-                        <input name="usr" type="email" class="input">
+                        <input name="usr" type="email" class="input" required>
                     </div>
                 </div>
                 <div class="input-div pass">
@@ -98,13 +98,10 @@
                     </div>
                     <div class="div">
                         <h5>Contraseña</h5>
-                        <input name="psw" type="password" class="input">
+                        <input name="psw" type="password" class="input" required>
                         <input name="accion" type="hidden" value="registrar">
                     </div>
                  </div>
-                <% if(session.getAttribute("LogError")!=null){ %>
-                    <h5><%= session.getAttribute("LogErrorR")%></h5>
-                <% } %>
                  <input type="submit" class="btn" value="Registrar">
             </form>
         </div>

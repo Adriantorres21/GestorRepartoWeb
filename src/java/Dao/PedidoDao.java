@@ -94,7 +94,7 @@ public class PedidoDao {
                         "ON pp.idPedido = p.idPedido " +
                         "INNER JOIN productos pr " +
                         "ON pr.idProducto = pp.idProd " +
-                        "WHERE u.idusuario = ?";
+                        "WHERE u.idusuario = ? ORDER BY P.fecha DESC";
         
         pst = cn.prepareStatement(sql);
         try{

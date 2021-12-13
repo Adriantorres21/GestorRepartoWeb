@@ -40,8 +40,8 @@
                         </a>
 
                         <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                            <li><a class="dropdown-item" href="Login.jsp">Iniciar sesión</a></li>
-                            <li><a class="dropdown-item" href="Registro.jsp">Registrarme</a></li>
+                            <li><a class="dropdown-item" href="Login.jsp" target="_blank">Iniciar sesión</a></li>
+                            <li><a class="dropdown-item" href="Registro.jsp" target="_blank">Registrarme</a></li>
                         </ul>
                     </div>
                     <% } else { %>
@@ -51,6 +51,7 @@
                         </a>
 
                         <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <li><a class="dropdown-item bar-der textMenu" href="#" style="border: none; color: rgb(216, 138, 75); background:none">Mi perfil</a></li>
                             <form action="../Controlador/Sesion.jsp" method="POST">
                                 <input name="accion" type="hidden" value="cerrar">
                                 <input type="submit" class="bar-der textMenu" value="Cerrar Sesión" style="border: none; color: rgb(216, 138, 75); background:none">

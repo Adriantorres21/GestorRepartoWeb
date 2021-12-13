@@ -1,10 +1,12 @@
 
 package Modelo;
 
+import java.io.InputStream;
+
 public class Producto {
     private int id;
     private String nombre;
-    private String img;
+    private InputStream img;
     private String relleno;
     private String cobertura;
     private String pan;
@@ -23,7 +25,7 @@ public class Producto {
         this.cant = cant;
     }
 
-    public Producto(int id, String nombre, String img, String relleno, String cobertura, String pan, String mensaje, boolean tresLeches, double peso, String tipo, double precio) {
+    public Producto(int id, String nombre, InputStream img, String relleno, String cobertura, String pan, String mensaje, boolean tresLeches, double peso, String tipo, double precio) {
         this.id = id;
         this.nombre = nombre;
         this.img = img;
@@ -49,11 +51,11 @@ public class Producto {
         this.nombre = nombre;
     }
 
-    public String getImg() {
+    public InputStream getImg() {
         return img;
     }
 
-    public void setImg(String img) {
+    public void setImg(InputStream img) {
         this.img = img;
     }
 

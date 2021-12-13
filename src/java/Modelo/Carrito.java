@@ -5,11 +5,12 @@
  */
 package Modelo;
 
+import java.io.InputStream;
 import java.util.ArrayList;
 
 public class Carrito {
     
-    public static ArrayList<Producto>  agregarCar(int id, String nombre, String img, String relleno, String cobertura, String pan, String mensaje, boolean tresLeches, double peso, String tipo, double precio){
+    public static ArrayList<Producto>  agregarCar(int id, String nombre, InputStream img, String relleno, String cobertura, String pan, String mensaje, boolean tresLeches, double peso, String tipo, double precio){
         ArrayList<Producto> carProductos = new ArrayList();
         Producto p = new Producto(id, nombre, img, relleno, cobertura, pan, mensaje, tresLeches, peso, tipo, precio);
         p.setCant(1);

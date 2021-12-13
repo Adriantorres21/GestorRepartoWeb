@@ -32,7 +32,7 @@
                 if(session.getAttribute("Rol").equals("2")){
                     response.sendRedirect("../Vista/index.jsp");
                 }else{
-                    response.sendRedirect("../Vista/Usuarios.jsp");
+                    response.sendRedirect("../Vista/Admin/Usuarios.jsp");
                 }
             }
             break;
@@ -47,8 +47,8 @@
             String user = String.valueOf(request.getParameter("usr"));
             String pass = String.valueOf(request.getParameter("psw"));
             
-            if(nombre!=null && apP!=null && apM!=null && col!=null && calle!=null
-               && noC!=null && tel!=null && user!=null && pass!=null){
+            if(nombre!="" && apP!="" && apM!="" && col!="" && calle!=""
+               && noC!="" && tel!="" && user!="" && pass!=""){
                 Usuario us = new Usuario(nombre,apP,apM,col,calle,noC,tel);
                 int idu=UsuarioDao.registrarUsuario(us);
                 UsuarioDao.enlazarLogUser(idu, 2, user, pass);
