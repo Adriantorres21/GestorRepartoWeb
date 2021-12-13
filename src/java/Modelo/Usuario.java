@@ -18,7 +18,12 @@ public class Usuario {
     private String calle;
     private String noC;
     private String tel;
-
+    private int idL;
+    private int idR;
+    private String cuenta;
+    private String pass;
+    private String idU;
+    
     public Usuario(String nombre, String apP, String apM, String col, String calle, String noC, String tel) {
         this.nombre = nombre;
         this.apP = apP;
@@ -95,5 +100,46 @@ public class Usuario {
     public void setTel(String tel) {
         this.tel = tel;
     }
- 
+
+    public int getIdL() {
+        return idL;
+    }
+
+    public void setIdL(int idL) {
+        this.idL = idL;
+    }
+
+    public int getIdR() {
+        return idR;
+    }
+
+    public void setIdR(int idR) {
+        this.idR = idR;
+    }
+
+    public String getCuenta() {
+        return cuenta;
+    }
+
+    public void setCuenta(String cuenta) {
+        this.cuenta = cuenta;
+    }
+
+    public String getPass() {
+        return pass;
+    }
+
+    public void setPass(String pass) {
+        this.pass = pass;
+    }
+
+    public String getIdU() {
+        return idU;
+    }
+
+    public void setIdU(String idU) {
+        this.idU = idU;
+    }
+    
+    
 }
